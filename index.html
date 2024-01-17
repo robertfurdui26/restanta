@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+
+
+
+  
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Furdui Robert</h2>
+      <p>I'm a web developer passionate about creating beautiful and functional websites.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="main">
+        <img src="./images/me.jpg" alt="me">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5 id="developer">Developer<span> & Designer</span> </h5>
+            <p id="developer-text">I am a front-end developer.I can provide clean code and pixek
+                perfect design.I also make website more & more interactive with web
+                animations.I can provide clean code and pixel perfect design.I also
+                makes your website accesible to all users,regardless of their devices.
+            </p>
+     
+        </div>
+    </div>
+</section>
+
+  <section class="projects">
+    
+    <div class="card">
+        <img src="./images//manager.png" alt="Your Image">
+        <div class="card-content">
+          <h2>Manager</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut tempus magna. In hac habitasse platea dictumst.</p>
+        </div>
+      </div>
+
+      <div class="card2">
+        <img src="./images/site1.png" alt="Your Image">
+        <div class="card-content">
+          <h2>Airbnb project</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut tempus magna. In hac habitasse platea dictumst.</p>
+        </div>
+      </div>
+
+
+      <div class="card3">
+        <img src="./images/site2.png" alt="Your Image">
+        <div class="card-content">
+          <h2>Simple project start up</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut tempus magna. In hac habitasse platea dictumst.</p>
+        </div>
+      </div>
+</section>
+
+
+<section class="adress-tel">
+  <div class="contact" id="address">
+    <span class="address-icon"></span>
+    Sebes,116A ,Str Principala
+  </div>
+  <div class="contact" id="phone">
+    <span class="phone-icon"></span>
+    0772140646
+  </div>
+  <div class="contact" id="whatsapp">
+    <span class="whatsapp-icon"></span>
+    <a href="https://wa.me/1234567890" target="_blank">Chat on WhatsApp</a>
+  </div>
+
+</section>
+      
+
+  
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    var contacts = document.querySelectorAll('.contact');
+
+    function animateContacts() {
+        contacts.forEach(function(contact) {
+            if (isElementInViewport(contact)) {
+                contact.classList.add('show');
+            }
+        });
+    }
+
+    function isElementInViewport(element) {
+        var rect = element.getBoundingClientRect();
+
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    window.addEventListener('scroll', animateContacts);
+    animateContacts();
+</script>
+</body>
+</html>

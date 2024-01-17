@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50;
+    padding: 20px;
+    z-index: 1;
+}
+
+h1 {
+    color: rgb(201, 33, 33);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./images/build.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#developer-text {
+    color: #767373;
+    font-size: 18px;
+}
+
+
+
+.about {
+    background-color: #f1f1f1;
+    padding: 40px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding: 40px;
+
+
+    left: 0;
+    right: 50;
+    padding: 20px;
+    z-index: 1;
+}
+
+h2 {
+    color: rgb(201, 33, 33);
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: bisque;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.about {
+    padding: 100px 20px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about img {
+    height: auto;
+    width: 100%;
+    max-width: 430px;
+    margin-left: 80px;
+}
+
+.about-text {
+    max-width: 550px;
+    margin: 50px auto 0;
+
+}
+
+.about-text p {
+    color: rgba(177, 172, 177, 0.8);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 500px) {
+    .about {
+        padding: 100px 60px;
+        align-items: center;
+
+    }
+
+    .about-text {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about {
+        padding: 100px 80px;
+    }
+}
+
+/*---------card--------*/
+
+.card2,
+.card,
+.card3 {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #090808;
+    margin-bottom: 25px;
+}
+
+.card2 img,
+.card img,
+.card3 img {
+    width: 100%;
+    height: auto;
+}
+
+.card2-content,
+.card-content,
+.card3-content {
+    padding: 16px;
+}
+
+.card2-content h2,
+.card-content h2,
+.card3-content h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card2-content p,
+.card-content p,
+.card3-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+#developer {
+    color: #555;
+}
+
+.wapp {
+    background-color: #333;
+}
+
+.contact {
+    display: inline-block;
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.contact.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.address-icon,
+.phone-icon,
+.whatsapp-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.adress-tel {
+    background-color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(201, 33, 33);
+    font-weight: bold;
+}
